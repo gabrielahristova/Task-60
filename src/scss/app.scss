@@ -19,6 +19,14 @@ html {
   background: $background;
 }
 
+.navbar-menu {
+  visibility: inherit;
+}
+
+.navbar-burger {
+  visibility: hidden;
+}
+
 .main {
   height: 100vh;
   display: flex;
@@ -26,4 +34,14 @@ html {
   justify-content: center;
   font-size: 10rem;
   flex-flow: column;
+}
+
+@media all and (max-width: 600px) {
+  .navbar-menu {
+    visibility: hidden;
+  }
+
+  .navbar-burger {
+    visibility: inherit;
+  }
 }
